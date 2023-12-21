@@ -1,0 +1,217 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: #fff;
+}
+
+#card {
+  width: 100% !important;
+}
+.loginMain {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  background-color: rgba(36, 36, 36, 0.781);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  padding: 25px;
+  height: 70vh;
+  border: 1px solid #dfdfdf2d;
+  border-radius: 7px;
+}
+#heading {
+  font-size: 2vw;
+}
+.loginSlide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.loginSlide2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+#createText:hover {
+  cursor: pointer;
+  color: orange;
+}
+#loginText:hover {
+  cursor: pointer;
+  color: orange;
+}
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#signupBtn {
+  width: 100% !important;
+  height: 4.5vw;
+  border-radius: 0;
+}
+
+#googleBtn {
+  width: 100% !important;
+  color: #000 !important;
+}
+input {
+  border-radius: 0 !important;
+}
+.gallery {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.gall-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+  padding: 30px;
+}
+
+.pageBox {
+  width: 50%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#searchArea {
+  width: 45vw;
+  height: 4vw;
+  padding-left: 12px;
+}
+.searchBar {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+}
+.searchBox {
+  width: 100%;
+  height: 15%;
+}
+.gifGallery {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  gap: 10px;
+  justify-content: center;
+  align-items: start;
+}
+.gifGallery::-webkit-scrollbar {
+  display: none;
+}
+.card {
+  border: 1px solid #fff;
+}
+#page {
+  background-color: transparent;
+}
+li {
+  padding: 5px 18px 5px 18px;
+  color: #fff;
+  background-color: #ffc500;
+}
+ul {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+#galaxy {
+  position: absolute !important;
+  left: 50% !important;
+  transform: translate(-50%, 0) !important;
+  margin-top: 4vw !important;
+  font-size: 6vw !important;
+  display: none;
+}
+#logout {
+  position: relative;
+  /* border-radius: 0; */
+  background-color: #ffc500;
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    background-color: rgba(36, 36, 36, 0.781);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    padding: 25px;
+    height: 60vh;
+    border: 1px solid #dfdfdf2d;
+    border-radius: 7px;
+  }
+
+  #heading {
+    font-size: 4vw;
+  }
+  #signupBtn {
+    width: 100% !important;
+    height: 11vw;
+    border-radius: 0;
+  }
+  .card {
+    width: 40vw;
+  }
+  #searchArea {
+    width: 68vw;
+    height: 10.5vw;
+    padding-left: 12px;
+  }
+  #galaxy {
+    position: absolute !important;
+    left: 50% !important;
+    transform: translate(-50%, 0) !important;
+    margin-top: 4vw !important;
+    font-size: 6vw !important;
+    display: none;
+  }
+}
