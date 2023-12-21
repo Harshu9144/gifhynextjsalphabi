@@ -34,3 +34,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Project Overview
+Next.js web app for AlphaBI, featuring dynamic Giphy API integration. Key features include secure Firebase-based user authentication, Google Sign-In, GIF search with 'hot search,' paginated content for smooth browsing, and an initial display of trending GIFs for an immersive experience. AlphaBI specializes in Digital Transformation Consulting and Software Product Engineering, driving growth through innovative strategies and technology
